@@ -1,15 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-// Step 1. Import react-router functions
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />
-    }
-  ]);
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+// Login.js
+function Login() {
+    return (
+      <>
+        <header>
+          {/* Save space for NavBar */}
+        </header>
+        <main>
+          <h1>Login</h1>
+          <form>
+            <div>
+              <label for="username">Username: </label>
+              <input id="username" type="text" name="username" placeholder="Username" />
+            </div>
+            <br/>
+            <div>
+              <label for="password">Password: </label>
+              <input id="password" type="password" name="password" placeholder="Password" />
+            </div>
+            <br/>
+            <button type="submit">Submit</button>
+          </form>
+        </main>
+      </>
+    );
+  };
+  
+  export default Login;
